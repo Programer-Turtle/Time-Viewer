@@ -18,7 +18,7 @@ function GetTimeText(Date) {
 function GetTime() {
   const UTC = new Date();
   const EST = new Date(UTC.getTime() - 5 * 60 * 60 * 1000);
-  const ULT = new Date(UTC.getTime() - 690 * 60 * 1000);
+  const ULT = new Date(UTC.getTime() - 720 * 60 * 1000);
   const OLT = new Date(ULT.getTime() + 375 * 60 * 1000);
 
   TextUTC.innerText = GetTimeText(UTC);
